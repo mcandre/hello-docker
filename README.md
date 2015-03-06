@@ -1,16 +1,26 @@
 # hello-docker - a Docker container that prints Hello World
 
+# EXAMPLE
+
+```
+$ docker build -t mcandre/hello-docker .
+...
+
+$ docker run -t -i mcandre/hello-docker echo 'Hello World!'
+Hello World!
+```
+
 # REQUIREMENTS
 
 * [Docker](https://www.docker.com/)
 
-## xbian
+## Debian/Ubuntu
 
 ```
 $ sudo apt-get install docker.io
 ```
 
-## RedHat
+## RedHat/Fedora/CentOS
 
 ```
 $ sudo yum install docker-io
