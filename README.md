@@ -77,3 +77,9 @@ $ docker ps -a | grep hello-docker | awk '{ print $1 }' | xargs docker rm -f
 ```
 $ docker images | grep hello-docker | awk '{ print $3 }' | xargs docker rmi -f
 ```
+
+# Intermediate
+
+See [docker-curl](https://github.com/mcandre/docker-curl) for containers as providers of one-off commands.
+
+See [docker-apache](https://github.com/mcandre/docker-apache) for containers as continuous servers.
