@@ -3,8 +3,8 @@
 # EXAMPLE
 
 ```
-$ docker build -t mcandre/hello-docker .
-$ docker run mcandre/hello-docker echo 'Hello World!'
+$ docker pull mcandre/hello-docker
+$ docker run --rm mcandre/hello-docker echo 'Hello World!'
 Hello World!
 ```
 
@@ -48,17 +48,27 @@ $ brew install boot2docker
 > chocolatey install docker
 ```
 
-# Cleanup
+# DEVELOPMENT
+
+## Build
+
+```
+$ git clone https://github.com/mcandre/hello-docker.git
+$ cd hello-docker/
+$ docker build -t mcandre/hello-docker .
+```
+
+## Cleanup
 
 Sometimes you want to halt and delete Docker containers or images.
 
-## Destroy all containers matching query
+### Destroy all containers matching query
 
 ```
 $ docker ps -a | grep hello-docker | awk '{ print $1 }' | xargs docker rm -f
 ```
 
-## Destroy all images matching query
+### Destroy all images matching query
 
 ```
 $ docker images | grep hello-docker | awk '{ print $3 }' | xargs docker rmi -f
