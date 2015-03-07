@@ -4,6 +4,7 @@
 
 ```
 $ docker pull mcandre/hello-docker
+
 $ docker run --rm mcandre/hello-docker echo 'Hello World!'
 Hello World!
 ```
@@ -56,6 +57,9 @@ $ brew install boot2docker
 $ git clone https://github.com/mcandre/hello-docker.git
 $ cd hello-docker/
 $ docker build -t mcandre/hello-docker .
+
+$ docker run --rm mcandre/hello-docker echo 'Hello World!'
+Hello World!
 ```
 
 ## Cleanup
