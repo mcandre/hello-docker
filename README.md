@@ -1,6 +1,6 @@
 # hello-docker - a Docker container that prints Hello World
 
-# Docker Hub
+# DOCKER HUB
 
 https://registry.hub.docker.com/u/mcandre/hello-docker/
 
