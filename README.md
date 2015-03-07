@@ -4,7 +4,7 @@
 
 ```
 $ docker build -t mcandre/hello-docker .
-$ docker run -t -i mcandre/hello-docker echo 'Hello World!'
+$ docker run mcandre/hello-docker echo 'Hello World!'
 Hello World!
 ```
 
