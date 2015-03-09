@@ -66,6 +66,12 @@ $ docker run --rm mcandre/hello-docker echo 'Hello World!'
 Hello World!
 ```
 
+## Publish
+
+```
+$ docker push mcandre/hello-docker
+```
+
 ## Cleanup
 
 Sometimes you want to halt and delete Docker containers or images.
