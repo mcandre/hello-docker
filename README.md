@@ -7,9 +7,9 @@ https://registry.hub.docker.com/u/mcandre/hello-docker/
 # EXAMPLE
 
 ```
-$ docker pull mcandre/hello-docker
-
-$ docker run --rm mcandre/hello-docker echo 'Hello World!'
+$ make
+docker build -t mcandre/hello-docker .
+docker run --rm mcandre/hello-docker echo 'Hello World!'
 Hello World!
 ```
 
@@ -17,10 +17,14 @@ Hello World!
 
 * [Docker](https://www.docker.com/)
 
+## Optional
+
+* [make](http://www.gnu.org/software/make/)
+
 ## Debian/Ubuntu
 
 ```
-$ sudo apt-get install docker.io
+$ sudo apt-get install docker.io build-essential
 ```
 
 ## RedHat/Fedora/CentOS
@@ -37,6 +41,7 @@ $ sudo yum install docker-io
 
 ### Mac OS X
 
+* [Xcode](http://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12)
 * [Homebrew](http://brew.sh/)
 * [brew-cask](http://caskroom.io/)
 
@@ -50,21 +55,10 @@ $ brew install boot2docker
 * [Chocolatey](https://chocolatey.org/)
 
 ```
-> chocolatey install docker
+> chocolatey install docker make
 ```
 
 # DEVELOPMENT
-
-## Build
-
-```
-$ git clone https://github.com/mcandre/hello-docker.git
-$ cd hello-docker/
-$ docker build -t mcandre/hello-docker .
-
-$ docker run --rm mcandre/hello-docker echo 'Hello World!'
-Hello World!
-```
 
 ## Publish
 
@@ -72,24 +66,10 @@ Hello World!
 $ docker push mcandre/hello-docker
 ```
 
-## Cleanup
-
-Sometimes you want to halt and delete Docker containers or images.
-
-### Destroy all containers matching query
-
-```
-$ docker ps -a | grep -v IMAGE | grep hello-docker | awk '{ print $1 }' | xargs docker rm -f
-```
-
-### Destroy all images matching query
-
-```
-$ docker images | grep -v IMAGE | grep hello-docker | awk '{ print $3 }' | xargs docker rmi -f
-```
-
 # Intermediate lessons
 
 See [docker-curl](https://github.com/mcandre/docker-curl) for containers as providers of one-off commands.
 
 See [docker-apache](https://github.com/mcandre/docker-apache) and [docker-postgres](https://github.com/mcandre/docker-postgres) for containers as continuous servers.
+
+See [docker-redis](https://github.com/mcandre/docker-redis) for provisioning containers with Puppet.
