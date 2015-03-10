@@ -58,15 +58,7 @@ $ brew install boot2docker
 > chocolatey install docker make
 ```
 
-# DEVELOPMENT
-
-## Publish
-
-```
-$ docker push mcandre/hello-docker
-```
-
-# Intermediate lessons
+# INTERMEDIATE LESSONS
 
 See [docker-curl](https://github.com/mcandre/docker-curl) for containers as providers of one-off commands.
 
