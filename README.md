@@ -79,13 +79,13 @@ Sometimes you want to halt and delete Docker containers or images.
 ### Destroy all containers matching query
 
 ```
-$ docker ps -a | grep hello-docker | awk '{ print $1 }' | xargs docker rm -f
+$ docker ps -a | grep -v IMAGE | grep hello-docker | awk '{ print $1 }' | xargs docker rm -f
 ```
 
 ### Destroy all images matching query
 
 ```
-$ docker images | grep hello-docker | awk '{ print $3 }' | xargs docker rmi -f
+$ docker images | grep -v IMAGE | grep hello-docker | awk '{ print $3 }' | xargs docker rmi -f
 ```
 
 # Intermediate lessons
