@@ -65,3 +65,5 @@ See [docker-curl](https://github.com/mcandre/docker-curl) and [docker-java](http
 See [docker-apache](https://github.com/mcandre/docker-apache) and [docker-postgres](https://github.com/mcandre/docker-postgres) for containers as continuous servers.
 
 See [docker-redis](https://github.com/mcandre/docker-redis) for provisioning containers with Puppet.
+
+See [docker-jetty](https://github.com/mcandre/docker-jetty) for adding custom files to a container.
