@@ -60,7 +60,7 @@ $ brew install boot2docker
 
 # INTERMEDIATE LESSONS
 
-See [docker-curl](https://github.com/mcandre/docker-curl) for containers as providers of one-off commands.
+See [docker-curl](https://github.com/mcandre/docker-curl) and [docker-java](https://github.com/mcandre/docker-java) for containers as providers of single commands.
 
 See [docker-apache](https://github.com/mcandre/docker-apache) and [docker-postgres](https://github.com/mcandre/docker-postgres) for containers as continuous servers.
 
