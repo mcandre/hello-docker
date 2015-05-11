@@ -70,4 +70,6 @@ See [docker-redis](https://github.com/mcandre/docker-redis) for provisioning con
 
 See [docker-jetty](https://github.com/mcandre/docker-jetty) for adding custom files to a container.
 
+See [docker-gcc](https://github.com/mcandre/docker-gcc) for mounting host directories into containers.
+
 See [hello-docker-slim](https://github.com/mcandre/hello-docker-slim) for creating smaller Docker containers.
