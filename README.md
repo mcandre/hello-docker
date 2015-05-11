@@ -69,3 +69,5 @@ See [docker-apache](https://github.com/mcandre/docker-apache) and [docker-postgr
 See [docker-redis](https://github.com/mcandre/docker-redis) for provisioning containers with Puppet.
 
 See [docker-jetty](https://github.com/mcandre/docker-jetty) for adding custom files to a container.
+
+See [hello-docker-slim](https://github.com/mcandre/hello-docker-slim) for creating smaller Docker containers.
