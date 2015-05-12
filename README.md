@@ -73,3 +73,5 @@ See [docker-jetty](https://github.com/mcandre/docker-jetty) for adding custom fi
 See [docker-gcc](https://github.com/mcandre/docker-gcc) for mounting host directories into containers.
 
 See [hello-docker-slim](https://github.com/mcandre/hello-docker-slim) for creating smaller Docker containers.
+
+See [docker-curl-slim](https://github.com/mcandre/docker-curl-slim) for package management in small containers.
