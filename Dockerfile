@@ -1,2 +1,2 @@
-FROM ubuntu:12.04
+FROM ubuntu
 MAINTAINER Andrew Pennebaker <andrew.pennebaker@gmail.com>
