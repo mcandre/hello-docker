@@ -68,6 +68,8 @@ See [docker-apache](https://github.com/mcandre/docker-apache) and [docker-postgr
 
 See [docker-redis](https://github.com/mcandre/docker-redis) for provisioning containers with Puppet.
 
+See [docker-mongodb](https://github.com/mcandre/docker-mongodb) for provisioning containers with Chef.
+
 See [docker-jetty](https://github.com/mcandre/docker-jetty) for adding custom files to a container.
 
 See [docker-gcc](https://github.com/mcandre/docker-gcc) for mounting host directories into containers.
