@@ -20,6 +20,7 @@ Hello World!
 ## Optional
 
 * [make](http://www.gnu.org/software/make/)
+* [Node.js](https://nodejs.org/en/) (for dockerlint)
 
 ## Debian/Ubuntu
 
@@ -71,7 +72,6 @@ See [docker-redis](https://github.com/mcandre/docker-redis) for provisioning con
 See [docker-mongodb](https://github.com/mcandre/docker-mongodb) for provisioning containers with Chef.
 
 See [docker-dropwizard](https://github.com/mcandre/docker-dropwizard) for configuring Dropwizard with Chef templates.
-
 See [docker-jetty](https://github.com/mcandre/docker-jetty) for adding custom files to a container.
 
 See [docker-gcc](https://github.com/mcandre/docker-gcc) for mounting host directories into containers.
