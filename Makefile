@@ -3,10 +3,10 @@ IMAGE=mcandre/hello-docker
 all: run
 
 build: Dockerfile
-	docker build -t $(IMAGE) .
+	@docker build -t $(IMAGE) .
 
 run: clean-containers build
-	docker run --rm $(IMAGE) echo 'Hello World!'
+	@docker run --rm $(IMAGE) echo 'Hello World!'
 
 clean-containers:
 	-docker ps -a | grep -v IMAGE | awk '{ print $$1 }' | xargs docker rm -f
@@ -20,10 +20,10 @@ clean-layers:
 clean: clean-containers clean-images clean-layers
 
 editorconfig:
-	flcl . | xargs -n 100 editorconfig-cli check
+	@git ls-files -z | grep -av patch | xargs -0 -r -n 100 $(shell npm bin)/eclint check
 
 dockerlint:
-	$(shell npm bin)/dockerlint
+	@$(shell npm bin)/dockerlint
 
 lint: editorconfig dockerlint
 
